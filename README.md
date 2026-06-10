@@ -9,7 +9,7 @@ This project is divided into two folders `frontend` (React) and `backend` (Expre
 
 ![screenshot_1](https://github.com/muneeb-91/AI_Powered_Car_Blog_Application/blob/4d4ffe23c13145060fdf383140cca50a2255e7b7/screenshots/car_blog_ss1.png)
 
-![screenshot_2]([link](https://github.com/muneeb-91/AI_Powered_Car_Blog_Application/blob/4d4ffe23c13145060fdf383140cca50a2255e7b7/screenshots/car_blog_ss2.png))
+![screenshot_2](https://github.com/muneeb-91/AI_Powered_Car_Blog_Application/blob/101231cc0f83e539914b818aa8c83137912a1c0b/screenshots/car_blog_ss2.png)
 
 ![screenshot_3](https://github.com/muneeb-91/AI_Powered_Car_Blog_Application/blob/4d4ffe23c13145060fdf383140cca50a2255e7b7/screenshots/car_blog_ss3.png)
 
