@@ -22,7 +22,7 @@ const BlogsSection = () => {
     fetchBlogs();
   }, [currentPage]);
 
-  if(blogs.length === 0)
+  if(blogs?.length === 0)
   return(
     <div className="px-4 md:px-6 lg:px-8 py-4">
       {/* headings */}
@@ -70,7 +70,7 @@ const BlogsSection = () => {
                   <div className="flex flex-col">
                     <p className="text-gray-900 font-semibold md:text-md text-sm">{blog?.author.name}</p>
                     <p className="text-gray-600 font-medium md:text-sm text-xs">
-                      {fromatTime(blog.createdAt)} • 3 Min Read
+                      {fromatTime(blog?.createdAt)} • 3 Min Read
                     </p>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ const BlogsSection = () => {
 
                 <Link
                   className="cursor-pointer hover:opacity-95 bg-accent text-white px-5 py-2 rounded-md text-sm font-semibold"
-                  to={`/blog/${blog._id}`}
+                  to={`/blog/${blog?._id}`}
                 >
                   Read full article...
                 </Link>

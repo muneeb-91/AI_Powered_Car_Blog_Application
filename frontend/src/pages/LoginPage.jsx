@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CircleUser, Mail, Lock, Eye, EyeOff, Loader2 } from 'lucide-react';
 import toast from 'react-hot-toast';
-import { useAuth } from '../context/authContext';
+import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
   const {login, isLoggingIn} = useAuth();

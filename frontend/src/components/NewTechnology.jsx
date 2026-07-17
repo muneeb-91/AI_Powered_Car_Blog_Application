@@ -10,7 +10,7 @@ const NewTechnology = () => {
     getNewTechnologyBlogs();
   }, []);
 
-  if(newTechnologyBlogs.length === 0) 
+  if(newTechnologyBlogs?.length === 0) 
   return (
   <div>
     <div className="max-w-7xl px-4 md:px-6 lg:px-8 py-4 mb-12">
@@ -45,7 +45,7 @@ const NewTechnology = () => {
       {/* cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:px-8 sm:px-6 px-4 gap-3">
         {newTechnologyBlogs?.map((blog) => (
-          <Link className="bg-gray-100 rounded-md p-3 flex flex-col items-center gap-3 group hover:-translate-y-1.5 hover:scale-105 hover-bg-secondary transition-all duration-500 hover:shadow-2xl shadow-gray-400 mb-1 hover:cursor-pointer" key={blog?._id} to={`/blog/${blog._id}`}>
+          <Link className="bg-gray-100 rounded-md p-3 flex flex-col items-center gap-3 group hover:-translate-y-1.5 hover:scale-105 hover-bg-secondary transition-all duration-500 hover:shadow-2xl shadow-gray-400 mb-1 hover:cursor-pointer" key={blog?._id} to={`/blog/${blog?._id}`}>
             <div className="rounded-md w-full h-36">
               <img
                 src={blog?.image}

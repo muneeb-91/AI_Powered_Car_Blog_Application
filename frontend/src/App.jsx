@@ -11,7 +11,9 @@ import PostBlogPage from './pages/PostBlogPage';
 import RegisterPage from './pages/RegisterPage';
 import CategorizedBlogPage from './pages/CategorizedBlogPage';
 import 'quill/dist/quill.snow.css';
-import { useAuth } from './context/authContext';
+import { useAuth } from './context/AuthContext';
+import { Loader2 } from 'lucide-react';
+import Loader from './components/Loader';
 
 const App = () => {
   const {checkAuth, authUser, isAuthenticating} = useAuth();
@@ -20,7 +22,7 @@ const App = () => {
     checkAuth();
   }, []);
     
-    if(isAuthenticating) return <div className='fle items-center justify-center text-xl'>Loading...</div>
+    if(isAuthenticating) return <Loader/>
 
   return (
     <div className='box-border'>

@@ -10,7 +10,7 @@ const TrendingBlogs = () => {
     getTrendingBlogs();
   }, []);
   
-  if(trendingBlogs.length === 0) 
+  if(trendingBlogs?.length === 0) 
   return (
   <div>
     {/* heading */}
